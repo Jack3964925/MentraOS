@@ -31,8 +31,8 @@ APP_STORE_URL=http://47.115.138.199:5175
 
 # Alibaba Cloud Speech (NLS)
 ALIBABA_NLS_URL=wss://nls-gateway.cn-shanghai.aliyuncs.com/ws/v1
-ALIBABA_NLS_APPKEY=jJYGgIZ9OXLtsLDs
-ALIYUN_AK_ID=LTAI5tGFrhYfA47W2AUvht8c
+ALIBABA_NLS_APPKEY=***
+ALIYUN_AK_ID=***
 ALIYUN_AK_SECRET=***
 ```
 
