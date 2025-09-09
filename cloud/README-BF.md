@@ -30,10 +30,7 @@ RESEND_API_KEY=Z4vN6rL2xW9bM8sQ1tJ5kC7yA0uE3hD5oR6pX3iT7gF1nV2qK8zW0lY9mB4cJ7dS
 APP_STORE_URL=http://47.115.138.199:5175
 
 # Alibaba Cloud Speech (NLS)
-ALIBABA_NLS_URL=wss://nls-gateway.cn-shanghai.aliyuncs.com/ws/v1
-ALIBABA_NLS_APPKEY=***
-ALIYUN_AK_ID=***
-ALIYUN_AK_SECRET=***
+
 ```
 
 2. 如果跑bun run dev出现docker镜像下载问题，可以尝试给docker for windows配置docker engine，增加国内镜像资源：
