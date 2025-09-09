@@ -72,10 +72,10 @@ export class MemoryTelemetryService {
     this.interval = setInterval(() => {
       try {
         const snapshot = this.getCurrentStats();
-        this.logger.info(
-          { telemetry: "memory", snapshot },
-          "Memory telemetry snapshot",
-        );
+        // this.logger.info(
+        //   { telemetry: "memory", snapshot },
+        //   "Memory telemetry snapshot",
+        // );
       } catch (error) {
         this.logger.warn({ error }, "Failed to emit memory telemetry snapshot");
       }

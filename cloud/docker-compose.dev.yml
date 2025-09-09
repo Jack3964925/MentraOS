@@ -1,9 +1,9 @@
-services:
+services:  
   # Cloud service - handles its own SDK building
   cloud:
     stop_grace_period: 10s
     init: true
-    restart: "no"
+    restart: always
     deploy:
       resources:
         limits:
@@ -30,7 +30,22 @@ services:
     command: bash -c "bun install && cd packages/sdk && bun run build && cd ../cloud && bun install && bun run dev"
     tty: true
     stdin_open: true
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:7.0
+    container_name: mongodb
+    restart: always  # 自动重启
+    volumes:
+      - mongodb_data:/data/db  # 数据持久化卷
+    # 可选：限制资源使用
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
 
 volumes:
   node_modules:
   bun_cache:
+  mongodb_data:

@@ -14,7 +14,7 @@ export async function init(): Promise<void> {
     mongoose.set('strictQuery', false);
     const database = IS_PROD ? 'prod' : 'dev';
 
-    await mongoose.connect(MONGO_URL + "/prod");
+    await mongoose.connect( `${MONGO_URL}/${database}`);
     // After connection
     await mongoose.connection.db.collection('test').insertOne({ test: true });
 
