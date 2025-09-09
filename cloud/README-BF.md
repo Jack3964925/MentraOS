@@ -33,7 +33,7 @@ APP_STORE_URL=http://47.115.138.199:5175
 ALIBABA_NLS_URL=wss://nls-gateway.cn-shanghai.aliyuncs.com/ws/v1
 ALIBABA_NLS_APPKEY=jJYGgIZ9OXLtsLDs
 ALIYUN_AK_ID=LTAI5tGFrhYfA47W2AUvht8c
-ALIYUN_AK_SECRET=CRhuVKnNtIhDo1bwZOhuQeJMaRXdbE
+ALIYUN_AK_SECRET=***
 ```
 
 2. 如果跑bun run dev出现docker镜像下载问题，可以尝试给docker for windows配置docker engine，增加国内镜像资源：
